@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%
+}
+
+header {
+    max-width: 1920px;
+    max-height: 70px;
+    background-color: #08142C;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    max-width: 1920px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+a.header-logo-ln{
+    margin-top: 6px;
+    margin-left: 44px;
+}
+
+nav.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav.header-nav > a {
+    font-family: 'Stolzl Regular';
+    font-size: 14px;
+    color: white;
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+nav.header-nav > a:hover {
+    color: #2857B4
+}
+
+/* nav .menu li a {
+    display: block;
+    font-family: "Stolzl";
+    font-size: 14px;
+    color: white;
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+nav .menu li a:hover {
+    color: #2857B4;
+}
+
+.lang-choice {
+    width: 80px;
+    display: block;
+}
+
+a.lang-choice-link {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.lang-choice-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*padding-left: 60px;*/
+/* }
+
+img.lang-arrow {
+    max-height: 12px;
+    max-width: 12px;
+    padding-top: 31px;
+    padding-right: 4px;
+}
+
+p.lang-name {
+    color: #ffffff;
+    font-family: "Stolzl Thin";
+    font-size: 18px;
+}
+
+p.main-lang {
+    margin: 0;
+    padding-top: 25px;
+}
+
+.dropped-lang {
+    margin: 0;
+    padding: 0;
+}
+
+img.flag-image {
+    max-width: 22px;
+    max-height: 19px;
+    padding-left: 7px;
+}
+
+.flag-main {
+    padding-top: 26px;
+}
+
+.flag-image__flag-dropped_ge {
+    max-width: 22px;
+    max-height: 19px;
+    padding-left: 6px;
+}
+
+.lang-dropdown {
+    width: 80px;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.lang-dropdown-content {
+    background-color: #08142C;
+    padding-left: 15px;
+    display: none;
+    position: absolute;
+}
+
+.lang-choice:hover .lang-dropdown-content {
+    display: block;
+}
+
+.lang-choice-container_dropped {
+    display: flex;
+}
+
+p.lang-name_dropped {
+    margin: 0;
+}  */
+
+@font-face {
+    font-family: 'Stolzl Regular';
+    src: url("../fonts/stolzl/stolzl_regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl Thin';
+    src: url("../fonts/stolzl/stolzl_light.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
