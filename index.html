@@ -3,16 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>NANO — logistic group</title>
-  <link rel="icon" type="image/x-icon" href="../static/img/favicon.png">
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="icon" type="image/x-icon" href="./static/img/favicon.png">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./static/css/test.css">
 </head>
 
 <body>
   <header>
-    <div class="header-container">
-      <a class="header-logo-ln" href="#">
-        <img src="../static/img/main_logo.svg" alt="header_logo">
+    <div class="header-container" id="header-container">
+      <div class="header-close-button" id="header-close-button">&times;</div>
+      <a class="hefoo-logo-ln" href="#">
+        <img class="hefoo-logo header-logo" src="static/img/main_logo.svg" alt="header_logo">
       </a>
 
       <nav class="header-nav">
@@ -24,26 +27,26 @@
       <div class="dropdown">
         <div class="dropbtn">
           <div class="main-lang">
-            <img class="lang-arrow" src="../static/img/arrow.svg" alt="arrow">
+            <img class="lang-arrow" src="static/img/arrow.svg" alt="arrow">
             <p class="main-lang-p">RU</p>
-            <img class="main-lang-flag" src="../static/img/russian_flag.svg" alt="RU-flag">
+            <img class="main-lang-flag" src="static/img/russian_flag.svg" alt="RU-flag">
           </div>
         </div>
 
         <div class="dropdown-content">
           <div class="dropdown-lang ru">
             <a href="#">RU</a>
-            <img class="dropped-flag" src="../static/img/russian_flag.svg" alt="RU-flag">
+            <img class="dropped-flag" src="static/img/russian_flag.svg" alt="RU-flag">
           </div>
 
           <div class="dropdown-lang ge">
             <a href="#">GE</a>
-            <img class="dropped-flag" src="../static/img/georgia.svg" alt="GE-flag">
+            <img class="dropped-flag" src="static/img/georgia.svg" alt="GE-flag">
           </div>
 
           <div class="dropdown-lang en">
             <a href="#">EN</a>
-            <img class="dropped-flag" src="../static/img/uk.svg" alt="UK-flag">
+            <img class="dropped-flag" src="static/img/uk.svg" alt="UK-flag">
           </div>
         </div>
       </div>
@@ -53,18 +56,24 @@
   <main>
     <div class="main-container">
       <section class="intro">
-        <div class="intro-container">
+        <div class="intro-container container">
+          <div class="burger-button-container" id="burger-open-button">
+            <button class="burger-open-button"></button>
+          </div>
+          
           <div class="intro-content">
-            <img src="../static/img/main_logo.svg" alt="int" class="intro-logo">
+            <img src="static/img/main_logo.svg" alt="int" class="intro-logo">
             <h2>Экспорт и Импорт</h2>
             <h3>В любую точку мира!</h3>
+            <h4>Листайте вниз</h4>
           </div>
         </div>
       </section>
 
       <section class="about-us" name="about-us">
-        <div class="about-us-container">
+        <div class="about-us-container container">
           <div class="about-us-content">
+            <a name="about-us"></a>
             <h4 class="welcome-ms">
               Добро пожаловать на сайт компании ООО "NANO logistics group"
             </h4>
@@ -89,48 +98,285 @@
       </section>
 
       <section class="advantages">
-        <div class="advantages-container">
+        <div class="advantages-container container">
           <h5 class="uve-got">Выбирая нас, Вы получите</h5>
 
           <ul class="upper-row">
             <li>
-              <img src="../static/img/1about-us.svg" alt="1about-us">
-              <p>Гарантию неизменной стоимости. Без<br> скрытых условий!</p>
+              <img src="static/img/1about-us.svg" alt="1about-us">
+              <p>Гарантию неизменной стоимости. Без скрытых условий!</p>
             </li>
 
             <li>
-              <img src="../static/img/2about-us.svg" alt="2about-us">
+              <img src="static/img/2about-us.svg" alt="2about-us">
               <p>Доступность 24/7 в процессе работы</p>
             </li>
 
             <li>
-              <img src="../static/img/3about-us.svg" alt="3about-us">
-              <p>Подбор индивидуального таможенного<br> решения</p>
+              <img src="static/img/3about-us.svg" alt="3about-us">
+              <p>Подбор индивидуального таможенного решения</p>
             </li>
           </ul>
 
           <ul class="lower-row">
             <li>
-              <img src="../static/img/4about-us.svg" alt="4about-us">
+              <img src="static/img/4about-us.svg" alt="4about-us">
               <p>Надежного партнера. Более 20 лет на рынке</p>
             </li>
 
             <li>
-              <img src="../static/img/5about-us.svg" alt="5about-us">
-              <p>Никаких задержек. Доставим груз в<br> кротчайшие сроки</p>
+              <img src="static/img/5about-us.svg" alt="5about-us">
+              <p>Никаких задержек. Доставим груз в кротчайшие сроки</p>
             </li>
 
             <li>
-              <img src="../static/img/6about-us.svg" alt="6about-us">
-              <p>Экономию до 50% бюджета за счет<br> оптимизации логистики</p>
+              <img src="static/img/6about-us.svg" alt="6about-us">
+              <p>Экономию до 50% бюджета за счет оптимизации логистики</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="servieces"></section>
-      <section class="contacts"></section>
+
+      <section class="servieces">
+        <a name="services"></a>
+        <div class="slider">
+          <div class="slider-item slide1">
+            <span class="slider-item-subscription">
+              Наши услуги
+            </span>
+            <h1 class="slider-item-title">
+              Авиа перевозки
+            </h1>
+            <p class="slider-item-description">
+              Мы работаем напрямую с авиакомпаниями, поэтому<br> 
+              гарантируем грамотные логистические услуги и адекватные<br> цены.
+            </p>
+            <button class="submit-button" type="submit">
+              Заказать
+            </button>
+          </div>
+
+          <div class="slider-item slide2" >
+            <span class="slider-item-subscription">
+              Наши услуги
+            </span>
+            <h1 class="slider-item-title">
+              Морские перевозки
+            </h1>
+            <p class="slider-item-description">
+              Применение налаженных каналов поставок дает возможность 
+              организовать доставку «от двери до двери» с применением 
+              мультимодальных схем, так как судоходные линии предполагают 
+              транспортировку из одного порта в другой.
+            </p>
+            <button class="submit-button" type="submit">
+              Заказать
+            </button>
+          </div>
+
+          <div class="slider-item slide3" >
+            <span class="slider-item-subscription">
+              Наши услуги
+            </span>
+            <h1 class="slider-item-title">
+              ЖД перевозки
+            </h1>
+            <p class="slider-item-description">
+              У нас есть прямые договоры с ведущими железнодорожными 
+              операторами, поэтому мы предлагаем адекватные цены без накруток. 
+            </p>
+            <button class="submit-button" type="submit">
+              Заказать
+            </button>
+          </div>
+
+          <div class="slider-item slide4" >
+            <span class="slider-item-subscription">
+              Наши услуги
+            </span>
+            <h1 class="slider-item-title">
+              Сборные грузы
+            </h1>
+            <p class="slider-item-description">
+              Наши сотрудники подберут для вас оптимальную логистическую схему 
+              доставки (LCL, LTL, авиа+авто). Также мы произведем все расчеты 
+              и проконсультируем по любым вопросам.
+            </p>
+            <button class="submit-button" type="submit">
+              Заказать
+            </button>
+          </div>
+
+          <div class="slider-item slide5" >
+            <span class="slider-item-subscription">
+              Наши услуги
+            </span>
+            <h1 class="slider-item-title">
+              Таможенное оформление
+            </h1>
+            <p class="slider-item-description">
+              При заказе вам не нужно будет тратить время и деньги на работу 
+              с финансовой стороной перевозки, мы сделаем это за вас.
+            </p>
+            <button class="submit-button" type="submit">
+              Заказать
+            </button>
+          </div>
+
+          <div class="slider-item slide6" >
+            <span class="slider-item-subscription">
+              Наши услуги
+            </span>
+            <h1 class="slider-item-title">
+              Консультационные услуги
+            </h1>
+            <p class="slider-item-description">
+              NANO обладает богатым опытом, профессиональными знаниями и 
+              необходимыми ресурсами, чтобы осуществлять консультации по 
+              вопросам логистики и таможенного оформления.
+            </p>
+            <button class="submit-button" type="submit">
+              Заказать
+            </button>
+          </div>
+        </div>
+      
+      <div class="calculate container-2">
+        <h2 class="calculate-title">Рассчитать стоимость услуги</h2>
+        <div class="calculate-form-container">
+          <form class="calculate-form">
+            <div class="form-group">
+              <span class="from-describe">Пункт отправления</span>
+              <input type="text" class="input-form" 
+              name="from" placeholder="Бангкок">
+            </div>
+
+            <div class="form-group">
+              <span class="from-describe">Пункт назначения</span>
+              <input type="text" class="input-form" 
+              name="from" placeholder="Москва">
+            </div>
+
+            <div class="form-group">
+              <span class="from-describe">Характеристика груза</span>
+              <input type="text" class="input-form" 
+              name="from" placeholder="Хрупкий и т.п.">
+            </div>
+
+            <div class="form-group">
+              <span class="from-describe">Телефон</span>
+              <input type="text" class="input-form" 
+              name="from" placeholder="+1 ...">
+            </div>
+
+            <div class="form-group">
+              <span class="from-describe">E-mail</span>
+              <input type="email" class="input-form" 
+              name="from" placeholder="mail@...">
+            </div>
+
+            <button class="get-calculation">Получить расчет</button>
+
+          </form>
+          <div class="calculate-images">
+            <img src="./static/img/calculate-img.png" alt="calculate-back" 
+            class="calculate-back" width="709">
+            <img src="./static/img/main_logo.svg" alt="" class="calculate-logo">
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="contacts">
+        <a name="contacts"></a>
+        <h4 class="contacts-title">Наши контакты</h4>
+        <div class="contacts-data-container">
+          <div class="contacts-email">
+            <span class="email-title">E-mail:</span>
+            <span>info@partumllc.ru</span>
+          </div>
+          
+          <div class="contacts-phone">
+            <span class="phone-title">Телефон:</span>
+            <span>+7(499) 686-05-36</span>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
-</body>
+  <div id="pop-up-menu">
+    <div class="pop-up-menu-container">
+      <button id="pop-up-menu-close-button">
+        &times;
+      </button>
 
+      <h2 class="pop-up-menu-title">Закажите звонок</h2>
+      <p class="pop-up-menu-description">
+        Мы позвоним или напишем вам, чтобы <br>оформить ваш заказ
+      </p>
+      <form>
+
+      <div class="form-group pop-up-form-group">
+        <input name="name" class="input-name" placeholder="Владислав ...">
+        <span class="from-describe">Имя</span>
+      </div>
+
+      <div class="form-group pop-up-form-group">
+        <input name="contact" class="input-contact" placeholder="+1 234 ...">
+        <span class="from-describe">Телефон или email</span>
+      </div>
+
+      <button class="submit-order" id="order-button" type="submit">
+        Заказать
+      </button>
+      </form> 
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <a class="hefoo-logo-ln footer-logo" href="#">
+        <img class="hefoo-logo footer-logo" src="./static/img/main_logo.svg" alt="footer-logo">
+      </a>
+
+      <div class="footer-ul-container">
+        <span class="footer-ul-title">Услуги</span>
+        <ul class="services-1">
+          <li class="footer-li">Авиа перевозки</li>
+          <li class="footer-li">Морские перевозки</li>
+          <li class="footer-li">Жд перевозки</li>
+        </ul>
+      </div>
+
+      <div class="footer-ul-container">
+        <ul class="services-2">
+          <li class="footer-li">Особые грузы</li>
+          <li class="footer-li">Таможенное оформеление</li>
+          <li class="footer-li">Консультационные услуги</li>
+        </ul>
+      </div>
+      
+      <div class="footer-ul-container footer-contacts-container">
+        <span class="footer-ul-title">Контакты</span>
+        <ul class="footer-contacts">
+          <li class="footer-li">info@partumllc.ru</li>
+          <li class="footer-li">+7(499) 686-05-36</li>
+          <li class="footer-li">Language
+            <a href="#">
+              <img class="footer-flag" src="static/img/russian_flag.svg" alt="russian_flag">
+            </a>
+            <a href="#">
+              <img class="footer-flag" src="static/img/uk.svg" alt="uk_flag">
+            </a>
+            <a href="#">
+              <img class="footer-flag" src="static/img/georgia.svg" alt="georgia_flag">
+            </a> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./static/js/slick.min.js"></script>
+  <script src="./static/js/script.js"></script>
+</body>
 </html>

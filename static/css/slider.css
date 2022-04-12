@@ -1,0 +1,207 @@
+.slider{
+    font-family: 'Stolzl Regular';
+    position: relative;
+    min-width: 100%;
+    max-width: 1920px;
+    margin: 0;
+}
+ 
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.slider .slick-arrow.slick-prev{
+  left: 0;
+  background: url(../img/left-arrow.svg) 0 0 no-repeat;
+  border-style: none;
+  margin-left: 51px;
+}
+  
+.slider .slick-arrow.slick-next{
+  right: 0;
+  background: url(../img/right-arrow.svg)0 0 no-repeat;
+  border-style: none;
+  margin-right: 39px;
+}
+
+.slider .slick-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 61px;
+}
+
+.slider .slick-dots li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots button{
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border-style: none;
+  opacity: 0.39;
+  background-color: #2857B4;
+}
+
+.slider .slick-dots li.slick-active button{
+  opacity: 1;
+}
+
+.slider-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.slider-item-description{
+  max-width: 794px;
+  text-align: center;
+  margin: 0 0 93px 0;
+}
+
+.slider-item-title{
+  font-size: 81px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 0.75em;
+}
+
+.slider-item-subscription{
+  font-size: 15px;
+}
+
+.slider-item{
+  font-size: 24px;
+  background-position: center center;
+  min-height: 650px;
+}
+
+.slide1{
+  background-image:    
+    url(../img/service1.png);
+    background-size: cover;
+}
+
+.slide2{
+  background-image: url(../img/service2.png);
+  background-size: cover;
+}
+
+.slide3{
+  background-image: url(../img/service3.png);
+  background-size: cover;
+}
+
+.slide4{
+  background-image: url(../img/service4.png);
+  background-size: cover;
+}
+
+.slide5{
+  background-image: url(../img/service5.png);
+  background-size: cover;
+}
+
+.slide6{
+  background-image: url(../img/service6.png);
+  background-size: cover;
+}
+
+
+.slider button.submit-button{
+  background-color: #2857B4;
+  color: white;
+  width: 254px;
+  height: 56px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slick-track{
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slick-list{
+    overflow: hidden;
+  }
+
+#pop-up-menu {
+  box-sizing: border-box;
+  position: fixed;
+  left: calc(50% - 246px);
+  top: calc(50% - 325px);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  width: 492px;
+  height: 659px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.pop-up-menu-container {
+  position: relative;
+  margin-top: 71px;
+}
+
+h2.pop-up-menu-title {
+  font-family: 'Stolzl Regular';
+  font-size: 40px;
+  margin-bottom: 22px;
+}
+
+p.pop-up-menu-description {
+  font-family: 'Stolzl Regular';
+  font-size: 15px;
+  margin-bottom: 82px;
+  text-align: center;
+}
+
+.pop-up-form-group input.input-name, .pop-up-form-group input.input-contact {
+  margin-right: 0px;
+  margin-left: 4px;
+  min-width: 366px;
+  width: 366px;
+  height: 81px;
+}
+
+#pop-up-menu button.submit-order {
+  font-family: 'Stolzl Regular';
+  font-size: 20px;
+  background-color: #2857B4;
+  color: white;
+  width: 254px;
+  height: 56px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 42px;
+  margin-left: 56px;
+}
+
+#pop-up-menu-close-button {
+  position: absolute;
+  right: -35px;
+  top: -64px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 50px !important;
+  background-color: white;
+  color: black;
+  max-width: 50px;
+  height: 50px;
+}
