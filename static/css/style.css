@@ -264,6 +264,8 @@ section.advantages li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 23%;
+    height: 220px;
     margin: 0 73px;
 }
 
